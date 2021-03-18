@@ -12,7 +12,7 @@ canalización {
         }
         stage ('Paquete') {
             pasos {
-                sh '' '
+                sh '''
                     ./mvnw paquete -DskipTests \ 
                     -Dquarkus.package.type = uber-jar 
                 '''
