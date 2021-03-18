@@ -13,8 +13,7 @@ canalización {
         stage ('Paquete') {
             pasos {
                 sh '''
-                    ./mvnw paquete -DskipTests \ 
-                    -Dquarkus.package.type = uber-jar 
+                    ./mvnw paquete -DskipTests -Dquarkus.package.type = uber-jar 
                 '''
                 archiveArtifacts 'destino / *. jar' 
             }
